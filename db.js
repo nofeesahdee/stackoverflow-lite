@@ -1,10 +1,10 @@
-// const dotenv = require('dotenv');
+const dotenv = require('dotenv');
 const mongoose = require('mongoose')
 
-// dotenv.config({ path: './config/config.env'})
+dotenv.config({ path: './db.js'})
 
 const connectDB = async () => {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
+    const conn = await mongoose.connect('mongodb://127.0.0.1:27017/stackoverflow-lite', {
         useNewUrlParser: true,
         useUnifiedTopology : true
     });
