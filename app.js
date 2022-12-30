@@ -1,16 +1,17 @@
 const express = require('express');
 const connectDB = require('./db');
-// const stackoverflow = require('./routes/answer')
 const user = require('./routes/user')
+const cookieParser = require('cookie-parser')
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // body parser
 app.use(express.json())
-app.use('api/v1/stackoverflow', user)
-// app.use('api/v1/stackoverflow', )
+app.use(cookieParser())
+app.use('/api/v1/auth', user)
 
+// connect to mongodb database
 connectDB()
 
 app.listen(
