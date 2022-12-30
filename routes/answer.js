@@ -1,28 +1,11 @@
 // const express = require('express');
 // const router = express.Router();
-
 // const {
-//     getBootcamps,
-//     getBootcamp,
-//     createUser,
-//     updateUser,
-//     deleteUser,
-//     getBootcamps,
-//     getBootcamp,
-//     createUser,
-//     updateUser,
-//     deleteUser,
-// } = require('../controllers/bootcamps')
+//     postAnswer,
+//     deleteAnswer,
+// } = require('../controllers/answer')
 
-// router
-//     .route('/')
-//     .get(getBootcamps)
-//     // .post(createBootcamps)
-
-// router
-//     .route('/:id')
-//     .get(getBootcamp)
-//     .put(updateBootcamp)
-//     .delete(deleteBootcamp)
+// router.post('/register',postAnswer)
+// router.post('/login',deleteAnswer)
 
 // module.exports = router;

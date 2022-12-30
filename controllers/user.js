@@ -1,8 +1,6 @@
-const express = require('express')
 const asyncHandler = require('../middleware/async')
 const auth = require('../middleware/auth')
 const User = require('../models/User')
-// const router = new express.Router()
 
 // @desc register user
 // @routes POST /api/v1/auth/register
